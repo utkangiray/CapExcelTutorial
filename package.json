@@ -1,0 +1,25 @@
+{
+  "name": "CAP-Excel",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.108.16"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-excelupload": "cds watch --open excelupload/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/excelupload",
+    "app/excelupload"
+  ]
+}
